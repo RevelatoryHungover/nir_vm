@@ -1,0 +1,17 @@
+digraph asm_graph {
+0 [
+shape="Mrecord" fontname="Courier New"label =<<table border="0" cellborder="0" cellpadding="3"><tr><td align="center" colspan="2" bgcolor="grey">loc_0</td></tr><tr><td align="left">PUSH_REG   R1</td></tr><tr><td align="left">PUSH_IMM   0x0</td></tr><tr><td align="left">PUSH_IMM   0x0</td></tr></table>> ];
+1 [
+shape="Mrecord" fontname="Courier New"label =<<table border="0" cellborder="0" cellpadding="3"><tr><td align="center" colspan="2" bgcolor="grey">loc_18</td></tr><tr><td align="left">POP        R1</td></tr><tr><td align="left">POP        R0</td></tr><tr><td align="left">ADD        0x5BF</td></tr><tr><td align="left">PUSH_REG   R0</td></tr><tr><td align="left">PUSH_REG   R1</td></tr><tr><td align="left">POP        R0</td></tr><tr><td align="left">ADD        0x1</td></tr><tr><td align="left">PUSH_REG   R0</td></tr><tr><td align="left">PUSH_REG   R0</td></tr><tr><td align="left">PUSH_IMM   0x89</td></tr><tr><td align="left">JNE        loc_18</td></tr></table>> ];
+2 [
+shape="Mrecord" fontname="Courier New"label =<<table border="0" cellborder="0" cellpadding="3"><tr><td align="center" colspan="2" bgcolor="grey">loc_70</td></tr><tr><td align="left">POP        R0</td></tr><tr><td align="left">POP        R0</td></tr><tr><td align="left">XOR        0xDEAEADD8</td></tr><tr><td align="left">PUSH_REG   R0</td></tr><tr><td align="left">JNE        loc_a0</td></tr></table>> ];
+3 [
+shape="Mrecord" fontname="Courier New"label =<<table border="0" cellborder="0" cellpadding="3"><tr><td align="center" colspan="2" bgcolor="grey">loc_a0</td></tr><tr><td align="left">EXIT       0x3</td></tr></table>> ];
+4 [
+shape="Mrecord" fontname="Courier New"label =<<table border="0" cellborder="0" cellpadding="3"><tr><td align="center" colspan="2" bgcolor="grey">loc_98</td></tr><tr><td align="left">EXIT       0x0</td></tr></table>> ];
+2 -> 3[color="limegreen"];
+2 -> 4[color="red"];
+1 -> 2[color="red"];
+1 -> 1[color="limegreen"];
+0 -> 1[color="blue"];
+}
